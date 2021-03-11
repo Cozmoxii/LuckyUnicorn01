@@ -1,0 +1,13 @@
+C:\Users\singall\source\repos\LuckyUnicorn01\LuckyUnicorn01\obj\Debug\netcoreapp3.1\LuckyUnicorn01.csprojAssemblyReference.cache
+C:\Users\singall\source\repos\LuckyUnicorn01\LuckyUnicorn01\obj\Debug\netcoreapp3.1\LuckyUnicorn01.AssemblyInfoInputs.cache
+C:\Users\singall\source\repos\LuckyUnicorn01\LuckyUnicorn01\obj\Debug\netcoreapp3.1\LuckyUnicorn01.AssemblyInfo.cs
+C:\Users\singall\source\repos\LuckyUnicorn01\LuckyUnicorn01\obj\Debug\netcoreapp3.1\LuckyUnicorn01.csproj.CoreCompileInputs.cache
+C:\Users\singall\source\repos\LuckyUnicorn01\LuckyUnicorn01\bin\Debug\netcoreapp3.1\LuckyUnicorn01.exe
+C:\Users\singall\source\repos\LuckyUnicorn01\LuckyUnicorn01\bin\Debug\netcoreapp3.1\LuckyUnicorn01.deps.json
+C:\Users\singall\source\repos\LuckyUnicorn01\LuckyUnicorn01\bin\Debug\netcoreapp3.1\LuckyUnicorn01.runtimeconfig.json
+C:\Users\singall\source\repos\LuckyUnicorn01\LuckyUnicorn01\bin\Debug\netcoreapp3.1\LuckyUnicorn01.runtimeconfig.dev.json
+C:\Users\singall\source\repos\LuckyUnicorn01\LuckyUnicorn01\bin\Debug\netcoreapp3.1\LuckyUnicorn01.dll
+C:\Users\singall\source\repos\LuckyUnicorn01\LuckyUnicorn01\bin\Debug\netcoreapp3.1\LuckyUnicorn01.pdb
+C:\Users\singall\source\repos\LuckyUnicorn01\LuckyUnicorn01\obj\Debug\netcoreapp3.1\LuckyUnicorn01.dll
+C:\Users\singall\source\repos\LuckyUnicorn01\LuckyUnicorn01\obj\Debug\netcoreapp3.1\LuckyUnicorn01.pdb
+C:\Users\singall\source\repos\LuckyUnicorn01\LuckyUnicorn01\obj\Debug\netcoreapp3.1\LuckyUnicorn01.genruntimeconfig.cache
