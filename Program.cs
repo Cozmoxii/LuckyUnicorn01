@@ -7,23 +7,32 @@ namespace LuckyUnicorn01
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Welcome to Lucky Unicorn!!\n\n" +
-                "Have you played before? y/n");
-            char userinput = Convert.ToChar(Console.ReadLine().ToLower()[0]);
+            Console.WriteLine("Welcome to Lucky Unicorn!!\n\n");
 
-            if (userinput == 'y')
-            {
-                Console.WriteLine("Start game");
-            }
+            bool flag = true;
 
-            else if (userinput == 'n')
+            while (flag)
             {
-                Console.WriteLine("Show Instructions");
+                Console.WriteLine("Have you played before? y/n");
+                char userinput = Convert.ToChar(Console.ReadLine().ToLower()[0]);
+
+                if (userinput == 'y')
+                {
+                    Console.WriteLine("Start game");
+                    flag = false;
+                }
+
+                else if (userinput == 'n')
+                {
+                    Console.WriteLine("Show Instructions");
+                    flag = false;
+                }
+                else
+                {
+                    Console.WriteLine("----ERROR PLEASE ENTER Y/N----");
+                }
             }
-            else
-            {
-                Console.WriteLine("----ERROR PLEASE ENTER Y/N----");
-            }
+           
         }
     }
 }
