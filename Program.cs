@@ -9,6 +9,38 @@ namespace LuckyUnicorn01
 
         //methods
 
+        private static int MoneyCheck(int low, int high)
+        {
+            bool valid = false;
+            while (!valid)
+            {
+                string error = $"Whoops! Please choose a whole number between {low} and {high}";
+
+                try
+                {
+                    Console.WriteLine($"\nPlease enter the amount of money you want to spend between {low}$ and {high}$:"+
+                        "\nWe do not accept decimal values.");
+                    int response = Convert.ToInt32(Console.ReadLine());
+                    if (low <= response && response <= high)
+                    {
+                        return response;
+                    }
+                    else
+                    {
+                        Console.WriteLine(error);
+                    }
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine(error);
+
+                }
+            }
+            return -1;
+        }
+
+
+
         private static string CheckYesNo()
         {
            
@@ -36,6 +68,15 @@ namespace LuckyUnicorn01
             //return "";
         }
 
+        private static void StartGame()
+        {
+            
+            int cost = MoneyCheck(1,10);
+
+            Console.WriteLine("You have entered " + cost + "$, so you shall recieve " +cost+ " random animals");
+
+        }
+
         //main process
         static void Main(string[] args)
         {
@@ -44,12 +85,14 @@ namespace LuckyUnicorn01
 
             if (CheckYesNo().Equals("y")) 
             {
-                Console.WriteLine("start game");
+                StartGame();
             }
             else
             {
-                Console.WriteLine("Show Instructions");
-                Console.WriteLine("start game");
+                Console.WriteLine("\nIn this game, you will enter the amount of money you want to play----\n" +
+                    "Based on the amount you have entered, there will be a random animal generated----\n" +
+                    "A unicorn, donkey or horse can be generated--to be continued");
+                StartGame();
             }
 
             
