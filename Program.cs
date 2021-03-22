@@ -1,11 +1,14 @@
 ﻿//imports
 using System;
+using System.Collections.Generic;
 
 namespace LuckyUnicorn01
 {
     class Program
     {
         //global variables
+
+        private static List<string> animals = new List<string> {"horse","donkey","zebra","unicorn" };
 
         //methods
 
@@ -18,7 +21,7 @@ namespace LuckyUnicorn01
 
                 try
                 {
-                    Console.WriteLine($"\nPlease enter the amount of money you want to spend between {low}$ and {high}$:"+
+                    Console.WriteLine($"\nPlease enter the amount of money you want to spend between {low}$ and {high}$:" +
                         "\nWe do not accept decimal values.");
                     int response = Convert.ToInt32(Console.ReadLine());
                     if (low <= response && response <= high)
@@ -43,7 +46,7 @@ namespace LuckyUnicorn01
 
         private static string CheckYesNo()
         {
-           
+
 
             while (true)
             {
@@ -52,7 +55,7 @@ namespace LuckyUnicorn01
 
                 if (userinput == 'y')
                 {
-                    return "y";                  
+                    return "y";
                 }
 
                 else if (userinput == 'n')
@@ -68,15 +71,33 @@ namespace LuckyUnicorn01
             //return "";
         }
 
+        static void GetRandomAnimal()
+        {
+
+            Random randAni = new Random();
+            int index = randAni.Next(animals.Count);
+            string randomAnimal = animals[index];
+            Console.WriteLine(animals[index]);
+
+
+
+        }
         private static void StartGame()
         {
-            
-            int cost = MoneyCheck(1,10);
 
-            Console.WriteLine("You have entered " + cost + "$, so you shall recieve " +cost+ " random animals");
+            int cost = MoneyCheck(1, 10);
+
+            Console.WriteLine("You will be spending " + cost + "$, so you shall recieve " + cost + " random animals");
+
+            for (int i = 0; i < cost; i++)
+            {
+                GetRandomAnimal();
+            }
+
 
         }
 
+      
         //main process
         static void Main(string[] args)
         {
