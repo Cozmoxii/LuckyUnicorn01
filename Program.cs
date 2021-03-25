@@ -8,8 +8,8 @@ namespace LuckyUnicorn01
     {
         //global variables
 
-        private static List<string> animals = new List<string> {"horse","donkey","zebra","unicorn" };
-
+        //private static List<string> animals = new List<string> {"horse","donkey","zebra","unicorn" };
+        private static float money;
         //methods
 
         private static int MoneyCheck(int low, int high)
@@ -73,11 +73,32 @@ namespace LuckyUnicorn01
 
         static void GetRandomAnimal()
         {
+            Random rd = new Random();
+            int randNum = rd.Next(0, 100);
 
-            Random randAni = new Random();
-            int index = randAni.Next(animals.Count);
-            string randomAnimal = animals[index];
-            Console.WriteLine(animals[index]);
+            if (randNum >= 90) 
+            {
+                money += 4;
+                Console.WriteLine("unicorn");
+            }
+            else if (randNum >= 60)
+            {
+                money -= (float)0.5;
+                Console.WriteLine("zebra");
+
+            }
+            else if (randNum >= 30)
+            {
+                money -= (float)0.5;
+                Console.WriteLine("horse");
+            }
+            else
+            {
+                money -= 1;
+                Console.WriteLine("donkey");
+            }
+
+            
 
 
 
@@ -87,13 +108,18 @@ namespace LuckyUnicorn01
 
             int cost = MoneyCheck(1, 10);
 
-            Console.WriteLine("You will be spending " + cost + "$, so you shall recieve " + cost + " random animals");
+            money += cost;
+
+            Console.WriteLine("You will be spending " + cost + "$, so you shall recieve " + cost + " random animals\n");
 
             for (int i = 0; i < cost; i++)
             {
                 GetRandomAnimal();
             }
 
+            Console.WriteLine("\nYour balance is "+money+"$");
+
+            
 
         }
 
